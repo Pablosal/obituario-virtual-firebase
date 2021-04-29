@@ -11,16 +11,19 @@ const Navbar = () => {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: #2A9D8F;
+    background-color: #2a9d8f;
     padding: 15px;
     a {
       color: white;
-      font-weigth: 700;
+      font-weight: 700;
       text-decoration: none;
-      font-size:1.2rem;
-    &:hover{
-        border-bottom:2px solid white;
+      font-size: 1.2rem;
+      &:hover {
+        border-bottom: 2px solid white;
+      }
     }
+    @media (max-width: 600px) {
+   
     }
   `;
   const [ModalActivado, setModalActivado] = useState(false);
@@ -33,7 +36,9 @@ const Navbar = () => {
   return (
     <BarraDeNavegacion>
       <NavLink to="/">Busca En Nuestro Calendario</NavLink>
-      <Boton ancho="300px" primary="#E76F51" onClick={abrirModal}>Agregar Obituario</Boton>
+      <Boton ancho="300px" primary="#E76F51" onClick={abrirModal}>
+        Agregar Obituario
+      </Boton>
       {ModalActivado ? (
         <>
           <Backdrop fn={cerrarModal} />

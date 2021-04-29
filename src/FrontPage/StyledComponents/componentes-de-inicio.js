@@ -5,8 +5,8 @@ export const DateRow = styled.ul`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
-  border: 2px solid #E76F51;
+  flex-direction: column;
+  border: 2px solid #e76f51;
   width: 100%;
   color: white;
   font-size: 1.5rem;
@@ -16,7 +16,10 @@ export const DateRow = styled.ul`
     padding: 2px;
     cursor: pointer;
     width: 100%;
-    padding:10px;
+    padding: 10px;
+  }
+  @media (min-width: 500px) {
+    flex-direction: row;
   }
 `;
 
@@ -58,7 +61,7 @@ export const Formulario = styled.form`
   justfy-content: center;
   flex-direction: column;
   width: 100%;
-  background-color:#E76F51;
+  background-color: #e76f51;
 `;
 export const TarjetasParaUsuario = styled.div`
   border: 2px solid black;

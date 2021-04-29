@@ -8,7 +8,6 @@ const Modal = (props) => {
     height: "75%",
     top: "15%", /* push down by 50% of the height of the container */
     minWidth: "50%",
-    width: "50%",
     display:"flex",
     justifyContent:"center",
     alignItems:"center",

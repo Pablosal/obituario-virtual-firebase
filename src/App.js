@@ -15,9 +15,7 @@ function App() {
           <div className="App">
             <PaginaDeInicio />
           </div>
-
         </Route>
-
         <Route exact path="/:id">
           <PersonalPage />
         </Route>
